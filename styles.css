@@ -1,0 +1,108 @@
+html, body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: black;
+	margin: 0 auto;
+	line-height: 1.5;
+    width: 800px;
+	background-color: white;
+	background-image: url(bg.png);
+	background-position: left top;
+	background-repeat: repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #397ABF;
+}
+a:visited {
+    color: #397ABF;
+}
+a:hover {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+a:active {
+    color: #0000FF;
+}
+
+h1 {
+    font-size: 5em;
+    color: #5CB9E0;
+}
+
+table {
+    border: none;
+}
+
+.right {
+    float: right;
+    width: 400px;
+}
+
+.left {
+    overflow: hidden;
+}
+
+figure {
+  display: block;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0 20px 20px 0;
+}
+figcaption {
+  position: absolute;
+  background: black;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 20px;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+figure:hover figcaption {
+  opacity: 1;
+}
+figure:before {
+  content: "?";
+  position: absolute;
+  font-weight: 800;
+  background: black;
+  background: rgba(255,255,255,0.75);
+  text-shadow: 0 0 5px white;
+  color: black;
+  width: 24px;
+  height: 24px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius:    12px;
+  border-radius:         12px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  -moz-transition: all 0.6s ease;
+  opacity: 0.75;
+}
+figure:hover:before {
+  opacity: 0;
+}
+
+.cap-left:before {  bottom: 10px; left: 10px; }
+.cap-left figcaption { bottom: 0; left: -30%; }
+.cap-left:hover figcaption { left: 0; }
+
+.cap-right:before { bottom: 10px; right: 10px; }
+.cap-right figcaption { bottom: 0; right: -30%; }
+.cap-right:hover figcaption { right: 0; }
+
+.cap-top:before { top: 10px; left: 10px; }
+.cap-top figcaption { left: 0; top: -30%; }
+.cap-top:hover figcaption { top: 0; }
+
+.cap-bot:before { bottom: 10px; left: 10px; }
+.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot:hover figcaption { bottom: 0; }
